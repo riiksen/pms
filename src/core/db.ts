@@ -9,7 +9,7 @@ import postgres from 'postgres';
 // migrate(drizzle(migrationClient), ...)
 
 // for query purposes
-const queryClient = postgres("postgres://postgres:adminadmin@0.0.0.0:5432/db");
+const queryClient = postgres("postgres://postgres:password@localhost:5432/pms");
 export const db = drizzle(queryClient);
 
 export const userTable = pgTable("user", {

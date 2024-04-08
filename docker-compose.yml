@@ -1,0 +1,12 @@
+services:
+  db:
+    restart: always
+    image: postgres:16-alpine
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'postgres']
+    environment:
+      POSTGRES_DB: pms
+      POSTGRES_PASSWORD: password
+
+    ports:
+      - "5432:5432"
