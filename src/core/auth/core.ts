@@ -1,11 +1,10 @@
-'use server';
+"use server";
 
 import { DrizzlePostgreSQLAdapter } from "@lucia-auth/adapter-drizzle";
 import { Lucia } from "lucia";
 
+import { db } from "@/core/db";
 import { users, sessions } from "@/schema";
-
-import { db } from "./db";
 
 export const adapter = new DrizzlePostgreSQLAdapter(db, sessions, users);
 
