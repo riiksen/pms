@@ -13,7 +13,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-export function SettingsLayout({
+export default function SettingsLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (

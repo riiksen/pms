@@ -5,7 +5,6 @@ import { Argon2id } from "oslo/password";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-
 import { lucia } from "@/core/auth";
 import { db } from "@/core/db";
 import { users } from "@/schema";
@@ -73,4 +72,4 @@ export async function login(_currentState: unknown, formData: FormData) {
   );
 
   return redirect("/");
-};
+}

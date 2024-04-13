@@ -10,7 +10,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <div className="grid gap-6">
       <Card x-chunk="dashboard-04-chunk-1">
